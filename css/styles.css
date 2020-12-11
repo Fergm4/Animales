@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62,5%;
+    font-family: 'Assistant', sans-serif;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven{
+    background-image: url('../img/leones.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.two{
+    background-image: url('../img/puma.jpg');
+    justify-content: flex-end;
+}
+
+.two .container{
+    text-align: right;
+}
+
+.three{
+    background-image: url('../img/zorro.jpg');
+}
+
+.four{
+    justify-content: flex-end;
+    background-image: url('../img/tiger.jpg');
+    background-position: left;
+}
+
+.four .container{
+    text-align: right;
+}
+
+.five{
+    background-image: url('../img/elefante.jpg');
+}
+
+.six{
+    background-image: url('../img/pantera.jpg');
+    justify-content: flex-end;
+}
+
+.six .container{
+    text-align: right;
+}
+
+.seven{
+    background-image: url('../img/oso.jpg');
+}
+
+.container{
+    box-shadow: 1px 1px 1px solid black;
+    padding: 30px;
+    width: 45%;
+    height: 700px;
+    margin: 60px;
+}
+
+.container h1{
+    font-size: 4.6rem;
+}
+
+/* ------------ TEXTO ONE ------------- */
+.container-one h1{
+    color: #331908;
+}
+
+.container-one P{
+    background-color: rgba(161, 182, 201,.3);
+    color: #331908;
+}
+
+/* ------------ TEXTO TWO ------------- */
+.container-two h1{
+    color: #130C0C;
+}
+
+.container-two P{
+    background-color: rgba(162, 172, 189,.3);
+    color: #130C0C;
+}
+
+
+/* ------------ TEXTO THREE ------------- */
+.container-three h1{
+    color: #B35129;
+}
+
+.container-three P{
+    background-color: rgba(236, 240, 242,.3);
+    color: #B35129;
+}
+
+
+/* ------------ TEXTO FOUR ------------- */
+.container-four h1{
+    color: #F2FBFF;
+}
+
+.container-four P{
+    background-color: rgba(138, 141, 147,.3);
+    color: #F2FBFF;
+}
+
+/* ------------ TEXTO FIVE ------------- */
+.container-five h1{
+    color: #4B1F0D;
+}
+
+.container-five P{
+    background-color: rgba(253, 144, 61,.3);
+    color: #4B1F0D;
+}
+
+/* ------------ TEXTO SIX ------------- */
+.container-six h1{
+    color: #DBD5C2;
+}
+
+.container-six P{
+    background-color: rgba(172, 137, 74,.3);
+    color: #DBD5C2;
+}
+
+/* ------------ TEXTO SEVEN ------------- */
+.container-seven h1{
+    color: #5C3D2F;
+}
+
+.container-seven P{
+    background-color: rgba(178, 155, 145,.3);
+    color: #5C3D2F;
+}
+
+.container p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+    margin: 40px 0 20px;
+    /* background-color: rgba(255,255,255,.3); */
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.button{
+    margin: 10px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+
+/* -------- BUTTONS COLORS ------- */
+
+.button-one{
+    background-color: #331908;
+    color: #FFF4BF;
+}
+
+.button-one:hover{
+    background-color: #FFF4BF;
+    color: #331908;
+    transition: .4s ease;
+}
+
+.button-two{
+    background-color: #130C0C;
+    color:#A2ACBD;
+}
+
+.button-two:hover{
+    background-color: #A2ACBD;
+    color: #130C0C;
+    transition: .4s ease;
+}
+
+.button-three{
+    background-color: #B35129;
+    color: #ECF0F2;
+}
+
+.button-three:hover{
+    background-color:  #ECF0F2;
+    color: #B35129;
+    transition: .4s ease;
+}
+
+.button-four{
+    background-color: #F2FBFF;
+    color: #7C3813;
+}
+
+.button-four:hover{
+    background-color:#7C3813;
+    color: #F2FBFF;
+    transition: .4s ease;
+}
+
+.button-five{
+    background-color: #4B1F0D;
+    color: #D4A29C;
+}
+
+.button-five:hover{
+    background-color: #D4A29C;
+    color: #4B1F0D;
+    transition: .4s ease;
+}
+
+.button-six{
+    background-color: #DBD5C2;
+    color: #000;
+}
+
+.button-six:hover{
+    background-color: #000;
+    color:  #DBD5C2;
+    transition: .4s ease;
+}
+
+.button-seven{
+    background-color: #5C3D2F;
+    color: #C4BEBE;
+}
+
+.button-seven:hover{
+    background-color: #C4BEBE;
+    color: #5C3D2F;
+    transition: .4s ease;
+}
+/* -----------ANIMATION------------ */
+
+.animado{
+    opacity: 0;
+    transition: all 2s;
+}
+
+.mostrarTop{
+    animation: mostrarTop 1s;
+}
+
+@keyframes mostrarTop{
+    0%{
+        transform: translateX(160px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* ---------------- MEDIA QUERYS -------------------- */
+
+@media screen and (min-width: 1600px){
+    .container h1{
+        font-size: 4.2rem;
+    } 
+}
+
+@media screen and (max-width: 1599px){
+    .container h1{
+        font-size: 3.3rem;
+    } 
+    .container p{
+        font-size: 1.4rem;
+    }
+    .container{
+        height: 100vh;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 1279px){
+    .container h1{
+        font-size: 3rem;
+    }    
+}
+
+@media screen and (max-width: 1079px){
+    .container p{
+        font-size: 1.2rem;
+    }
+
+    .container h1{
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .container h1{
+        font-size: 2.5rem;
+    }  
+    .button{
+        margin: 5px;
+        padding: 5px 20px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 979px){
+    .container{
+        padding: 10px;
+        width: 50%;
+        margin: 30px;
+    }
+
+    .two{
+        background-position: center;
+    }
+    
+    .four{
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 799px){
+    .container p{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 639px){
+    .container p{
+        font-size: 1rem;
+    }
+
+    .container{
+        padding: 5px;
+        width: 60%;
+    }
+
+    .button{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 539px){
+    .container h1{
+        font-size: 2.3rem;
+    }
+
+    .one{
+        background-image: url('../img/leones2.jpg');
+    }
+
+    .two{
+        background-image: url('../img/puma2.jpg');
+    }
+}
+
+@media screen and (max-width: 407px){
+    .container h1{
+        font-size: 2.2rem;
+    }
+
+    .five{
+        background-position: right;
+    }
+
+    .container{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 359px){
+    .container h1{
+        font-size: 2rem;
+    }
+
+    .five{
+        background-position: right;
+    }
+}
+
+
+
+
+
+
+
+
