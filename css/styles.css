@@ -328,8 +328,16 @@ body{
 @media screen and (max-width: 979px){
     .container{
         padding: 10px;
-        width: 50%;
+        width: 100%;
         margin: 30px;
+    }
+
+    .container p{
+        font-size: 1.1rem;
+    }
+
+    .container h1{
+        font-size: 2rem;
     }
 
     .two{
@@ -343,30 +351,30 @@ body{
 
 @media screen and (max-width: 799px){
     .container p{
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin: 10px;
     }
+    .container{
+        width: 80%;
+        margin: 20px;
+    }
+    .container h1{
+        font-size: 1.8rem;
+    }  
+    
+    .button{
+        margin: 15px;
+        font-size: 1rem;
+    }    
 }
 
-@media screen and (max-width: 639px){
+/* @media screen and (max-width: 639px){
     .container p{
         font-size: 1rem;
     }
-
-    .container{
-        padding: 5px;
-        width: 60%;
-    }
-
-    .button{
-        font-size: 1rem;
-    }
-}
+} */
 
 @media screen and (max-width: 539px){
-    .container h1{
-        font-size: 2.3rem;
-    }
-
     .one{
         background-image: url('../img/leones2.jpg');
     }
@@ -377,10 +385,6 @@ body{
 }
 
 @media screen and (max-width: 407px){
-    .container h1{
-        font-size: 2.2rem;
-    }
-
     .five{
         background-position: right;
     }
@@ -392,7 +396,7 @@ body{
 
 @media screen and (max-width: 359px){
     .container h1{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .five{
